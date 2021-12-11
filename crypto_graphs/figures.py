@@ -1,6 +1,6 @@
 from .utils.data import get_cryptocurrencies_dataframe
 
-import matplotlib.dates as mdates
+from matplotlib.dates import DateFormatter
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -22,7 +22,7 @@ def get_coin_figure(coin):
 
     ax.plot('price_update', 'price', data=coin_dataframe)
 
-    ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M'))
+    ax.xaxis.set_major_formatter(DateFormatter('%Y-%m-%d %H:%M'))
 
     plt.xlim(first_time, last_time)
     plt.ylim(low_price, high_price)

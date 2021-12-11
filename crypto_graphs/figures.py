@@ -18,7 +18,7 @@ def get_coin_figure(coin):
     high_price *= 2
 
     dpi = plt.gcf().get_dpi()
-    fig, ax = plt.subplots(1, figsize=(1920/float(dpi), 1080/float(dpi)), dpi=dpi)
+    fig, ax = plt.subplots(1, figsize=(1600/float(dpi), 900/float(dpi)), dpi=dpi)
 
     ax.plot('price_update', 'price', data=coin_dataframe)
 

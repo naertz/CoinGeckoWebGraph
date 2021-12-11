@@ -17,7 +17,7 @@ def atari_view(request):
     buffer.seek(0)
     string = base64.b64encode(buffer.read())
     uri = urllib.parse.quote(string)
-    return render(request, 'atari_graph.html', {'data':uri})
+    return render(request, 'atari_graph.html', {'data': uri})
 
 
 def bitcoin_view(request):
@@ -28,7 +28,7 @@ def bitcoin_view(request):
     buffer.seek(0)
     string = base64.b64encode(buffer.read())
     uri = urllib.parse.quote(string)
-    return render(request, 'bitcoin_graph.html', {'data':uri})
+    return render(request, 'bitcoin_graph.html', {'data': uri})
 
 
 def bitcoin_cash_view(request):
@@ -39,7 +39,7 @@ def bitcoin_cash_view(request):
     buffer.seek(0)
     string = base64.b64encode(buffer.read())
     uri = urllib.parse.quote(string)
-    return render(request, 'bitcoin_cash_graph.html', {'data':uri})
+    return render(request, 'bitcoin_cash_graph.html', {'data': uri})
 
 
 def curve_dao_token_view(request):
@@ -50,7 +50,7 @@ def curve_dao_token_view(request):
     buffer.seek(0)
     string = base64.b64encode(buffer.read())
     uri = urllib.parse.quote(string)
-    return render(request, 'curve_dao_token_graph.html', {'data':uri})
+    return render(request, 'curve_dao_token_graph.html', {'data': uri})
 
 
 def ethereum_view(request):
@@ -61,7 +61,7 @@ def ethereum_view(request):
     buffer.seek(0)
     string = base64.b64encode(buffer.read())
     uri = urllib.parse.quote(string)
-    return render(request, 'ethereum_graph.html', {'data':uri})
+    return render(request, 'ethereum_graph.html', {'data': uri})
 
 
 def fantom_view(request):
@@ -72,7 +72,7 @@ def fantom_view(request):
     buffer.seek(0)
     string = base64.b64encode(buffer.read())
     uri = urllib.parse.quote(string)
-    return render(request, 'fantom_graph.html', {'data':uri})
+    return render(request, 'fantom_graph.html', {'data': uri})
 
 
 def monero_view(request):
@@ -83,7 +83,7 @@ def monero_view(request):
     buffer.seek(0)
     string = base64.b64encode(buffer.read())
     uri = urllib.parse.quote(string)
-    return render(request, 'monero_graph.html', {'data':uri})
+    return render(request, 'monero_graph.html', {'data': uri})
 
 
 def tarot_view(request):
@@ -94,7 +94,7 @@ def tarot_view(request):
     buffer.seek(0)
     string = base64.b64encode(buffer.read())
     uri = urllib.parse.quote(string)
-    return render(request, 'tarot_graph.html', {'data':uri})
+    return render(request, 'tarot_graph.html', {'data': uri})
 
 
 def tomb_view(request):
@@ -105,4 +105,4 @@ def tomb_view(request):
     buffer.seek(0)
     string = base64.b64encode(buffer.read())
     uri = urllib.parse.quote(string)
-    return render(request, 'tomb_graph.html', {'data':uri})
+    return render(request, 'tomb_graph.html', {'data': uri})

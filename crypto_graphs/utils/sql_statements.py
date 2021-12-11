@@ -32,6 +32,8 @@ def insert_into_coin_all(coin):
 
 
 """SELECT Statements"""
+
+
 def select_count_from_sqlite_master_where_name(coin):
     return f'''SELECT COUNT(*) FROM sqlite_master WHERE name='{coin}';'''
 

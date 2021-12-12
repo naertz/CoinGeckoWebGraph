@@ -7,15 +7,17 @@
         <link href="{% static 'css/graph_pages.css' %}" rel="stylesheet">
     </head>
     <body>
-        <input type="button" onclick="window.location.href='../atari_graph/';" value="ATRI">
-        <input type="button" onclick="window.location.href='../bitcoin_graph/';" value="BTC">
-        <input type="button" onclick="window.location.href='../bitcoin_cash_graph/';" value="BCH">
-        <input type="button" onclick="window.location.href='../curve_dao_token_graph/';" value="CRV">
-        <input type="button" onclick="window.location.href='../ethereum_graph/';" value="ETH">
-        <input type="button" onclick="window.location.href='../fantom_graph/';" value="FTM">
-        <input type="button" onclick="window.location.href='../monero_graph/';" value="XMR">
-        <input type="button" onclick="window.location.href='../tarot_graph/';" value="TAROT">
-        <input type="button" onclick="window.location.href='../tomb_graph/';" value="TOMB">
-        <img src="{% static 'svg/ethereum_graph.svg' %}">
+        <div style="margin-bottom: 8px">
+            <input type="button" onclick="window.location.href='../atari_graph/';" value="ATRI">
+            <input type="button" onclick="window.location.href='../bitcoin_graph/';" value="BTC">
+            <input type="button" onclick="window.location.href='../bitcoin_cash_graph/';" value="BCH">
+            <input type="button" onclick="window.location.href='../curve_dao_token_graph/';" value="CRV">
+            <input type="button" onclick="window.location.href='../ethereum_graph/';" value="ETH">
+            <input type="button" onclick="window.location.href='../fantom_graph/';" value="FTM">
+            <input type="button" onclick="window.location.href='../monero_graph/';" value="XMR">
+            <input type="button" onclick="window.location.href='../tarot_graph/';" value="TAROT">
+            <input type="button" onclick="window.location.href='../tomb_graph/';" value="TOMB">
+        </div>
+        <img src="{% static 'svg/ethereum_graph.svg' %}" alt="Ethereum">
     </body>
 </html>

@@ -1,3 +1,5 @@
+from django.conf import settings
+
 from .database import Database
 from .sql_statements import create_coin_table, delete_coin_table, select_all_from_coin, select_count_from_sqlite_master_where_name, insert_into_coin_all
 
@@ -26,7 +28,7 @@ def get_coin_usd_timestamps_prices_tuple_list(coin):
     return timestamps_prices
 
 
-cryptocurrencies_database = Database(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data/cryptocurrencies.db'))
+cryptocurrencies_database = Database(settings.BASE_DIR / 'crypto_graphs/databases/cryptocurrencies.db')
 
 
 def get_cryptocurrencies_dataframe(coin):

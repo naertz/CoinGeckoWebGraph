@@ -5,7 +5,8 @@
         <title>Atari</title>
     </head>
     <body>
-        {{ data|safe }}
+        {% load static %}
+        <img src="{% static 'svg/atari_graph.svg' %}">
         <input type="button" onclick="window.location.href='../atari_graph/';" value="ATRI">
         <input type="button" onclick="window.location.href='../bitcoin_graph/';" value="BTC">
         <input type="button" onclick="window.location.href='../bitcoin_cash_graph/';" value="BCH">

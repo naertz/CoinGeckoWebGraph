@@ -32,12 +32,12 @@ def get_coin_figure(coin):
     return fig
 
 
-atari_graph = get_coin_figure('atari')
-bitcoin_graph = get_coin_figure('bitcoin')
-bitcoin_cash_graph = get_coin_figure('bitcoin-cash')
-curve_dao_token_graph = get_coin_figure('curve-dao-token')
-ethereum_graph = get_coin_figure('ethereum')
-fantom_graph = get_coin_figure('fantom')
-monero_graph = get_coin_figure('monero')
-tarot_graph = get_coin_figure('tarot')
-tomb_graph = get_coin_figure('tomb')
+atari = get_coin_figure('atari')
+bitcoin = get_coin_figure('bitcoin')
+bitcoin_cash = get_coin_figure('bitcoin-cash')
+curve_dao_token = get_coin_figure('curve-dao-token')
+ethereum = get_coin_figure('ethereum')
+fantom = get_coin_figure('fantom')
+monero = get_coin_figure('monero')
+tarot = get_coin_figure('tarot')
+tomb = get_coin_figure('tomb')

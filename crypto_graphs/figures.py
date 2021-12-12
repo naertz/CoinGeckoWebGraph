@@ -6,7 +6,7 @@ from matplotlib.ticker import StrMethodFormatter
 import numpy as np
 
 
-def get_coin_figure(coin):
+def get_coin_figure(coin, title):
     coin_dataframe = get_cryptocurrencies_dataframe(coin)
     first_time = np.datetime64(coin_dataframe['price_update'][0])
     last_time = np.datetime64(coin_dataframe['price_update'][len(coin_dataframe) - 1])
@@ -31,17 +31,22 @@ def get_coin_figure(coin):
     plt.xlim(first_time, last_time)
     plt.ylim(low_price, high_price)
 
+    plt.xlabel('Minutely Price Changes In Past 24 Hours')
+    plt.ylabel('USD Value')
+
+    plt.title(title)
+
     plt.tight_layout()
 
     return fig
 
 
-atari = get_coin_figure('atari')
-bitcoin = get_coin_figure('bitcoin')
-bitcoin_cash = get_coin_figure('bitcoin-cash')
-curve_dao_token = get_coin_figure('curve-dao-token')
-ethereum = get_coin_figure('ethereum')
-fantom = get_coin_figure('fantom')
-monero = get_coin_figure('monero')
-tarot = get_coin_figure('tarot')
-tomb = get_coin_figure('tomb')
+atari = get_coin_figure('atari', 'Atari')
+bitcoin = get_coin_figure('bitcoin', 'Bitcoin')
+bitcoin_cash = get_coin_figure('bitcoin-cash', 'Bitcoin Cash')
+curve_dao_token = get_coin_figure('curve-dao-token', 'Curve DAO Token')
+ethereum = get_coin_figure('ethereum', 'Ethereum')
+fantom = get_coin_figure('fantom', 'Fantom')
+monero = get_coin_figure('monero', 'Monero')
+tarot = get_coin_figure('tarot', 'Tarot')
+tomb = get_coin_figure('tomb', 'Tomb')

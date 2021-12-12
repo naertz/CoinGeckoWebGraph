@@ -5,7 +5,6 @@ from .sql_statements import create_coin_table, delete_coin_table, select_all_fro
 
 import datetime
 import json
-import os
 import re
 import requests
 import pandas as pd

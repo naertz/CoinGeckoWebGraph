@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Curve DAO Token</title>
+        {% load static %}
+        <link href="{% static 'css/graph_pages.css' %}" rel="stylesheet">
     </head>
     <body>
-        {% load static %}
-        <img src="{% static 'svg/curve_dao_token_graph.svg' %}">
         <input type="button" onclick="window.location.href='../atari_graph/';" value="ATRI">
         <input type="button" onclick="window.location.href='../bitcoin_graph/';" value="BTC">
         <input type="button" onclick="window.location.href='../bitcoin_cash_graph/';" value="BCH">
@@ -16,5 +16,6 @@
         <input type="button" onclick="window.location.href='../monero_graph/';" value="XMR">
         <input type="button" onclick="window.location.href='../tarot_graph/';" value="TAROT">
         <input type="button" onclick="window.location.href='../tomb_graph/';" value="TOMB">
+        <img src="{% static 'svg/curve_dao_token_graph.svg' %}">
     </body>
 </html>

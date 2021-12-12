@@ -18,10 +18,12 @@ def get_coin_figure(coin):
             high_price = float(price)
     high_price *= 2
 
+    plt.style.use('dark_background')
+
     dpi = plt.gcf().get_dpi()
     fig, ax = plt.subplots(1, figsize=(1600/float(dpi), 900/float(dpi)), dpi=dpi)
 
-    ax.plot('price_update', 'price', data=coin_dataframe)
+    ax.plot('price_update', 'price', data=coin_dataframe, color='white')
 
     ax.xaxis.set_major_formatter(DateFormatter('%Y-%m-%d %H:%M'))
     ax.yaxis.set_major_formatter(StrMethodFormatter('${x:,.2f}'))
